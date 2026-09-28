@@ -1,0 +1,38 @@
+USE CASE 3 
+AI for Frontend Generation & UI Risk Control 
+Covers: 
+• AI for Frontend 
+• Accessibility checks 
+• UI pitfalls 
+• State bugs 
+• Regression risk 
+Scenario: 
+Build: 
+• Product listing page 
+• Cart page 
+• Checkout form 
+AI generates UI components. 
+The AI Must: 
+• Add ARIA labels 
+• Avoid state mutation bugs 
+• Warn about race conditions 
+• Avoid hallucinated APIs 
+• Suggest regression test points 
+Example Prompt: 
+"Generate a React product listing component. 
+Requirements: 
+• Accessible (WCAG 2.1 AA) 
+• Handles loading and error states 
+• Avoid direct state mutation 
+• Use API endpoint: /api/v1/products 
+• Provide explanation of potential UI risks." 
+What to Build: 
+• React/Angular component 
+• Accessibility audit 
+• State management improvement 
+• Regression checklist 
+Deliverables: 
+• UI code 
+• Accessibility compliance proof 
+• UI risk report 
+• Prompt library entry 

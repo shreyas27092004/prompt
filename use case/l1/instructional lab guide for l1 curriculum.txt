@@ -1,0 +1,66 @@
+Instructional Lab Guide for L1 Curriculum 
+All participants of L1 Course are requested to ensure that the following 
+System configuration and Software are available.  
+It is fully based on tech stack (Java / Dotnet / Python)  a candidate or Team 
+is going to work with the use case.  
+Tech-Agnostic Full-Stack Development Using GenAI 
+1. Hardware / System Requirements 
+Minimum (Individual Developer Machine) 
+• CPU: Quad-core (Intel i5/AMD Ryzen 5 or above) 
+• RAM: 16 GB 
+• Storage: 512 GB SSD 
+• GPU: Not required for basic development, but useful if running local inference 
+• OS Support:  
+o Windows 11 
+o macOS 12+ 
+o Linux (Ubuntu 22.04 LTS recommended) 
+2. Core Software Requirements (Tech-Agnostic) 
+2.1. Back-End Development Requirements 
+(Choose any stack; requirements remain agnostic) 
+Languages (at least one) 
+• Node.js (LTS) 
+• Python 3.10+ 
+• Java 17+ 
+• .NET 8+ 
+• Go 1.21+ 
+2.2 Frameworks (typical options) 
+• Express / Fastify (Node) 
+• Django / FastAPI (Python) 
+• Spring Boot (Java) 
+• ASP.NET Core (C#) 
+• Gin / Echo (Go) 
+2.3 Package Managers 
+• npm / yarn / pnpm (Node) 
+• pip / conda (Python) 
+• Maven / Gradle (Java) 
+• NuGet (C#) 
+2.4 Database Clients 
+• PostgreSQL 
+• MySQL 
+• MongoDB 
+• Redis 
+• SQLite (lightweight dev) 
+3. Front-End Development Requirements 
+3.1. Frameworks 
+• React 
+• Angular 
+• Vue 
+• Svelte 
+3.2 IDE  
+• Visual Studio Code 
+• Visual Studio 
+3.3 Extended Plugins 
+• Amazon Q Developer 
+• GitHub Copilot Chat 
+3.4. DevOps & Tooling - CI/CD 
+• GitHub Actions / Azure DevOps 
+• Jenkins (optional) 
+3.5. Security & Compliance Requirements 
+• API gateways  
+• OAuth / JWT  
+4. Testing Requirements 
+4.1 Unit Testing 
+• Jest / Mocha (JavaScript) 
+• PyTest (Python) 
+• JUnit (Java) 
+• xUnit (C#) 

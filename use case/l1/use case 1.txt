@@ -1,0 +1,48 @@
+USE CASE 1: AI-Assisted Requirements & Architecture Design 
+Covers: 
+• Prompting for Developers 
+• LLM Basics 
+• AI in Requirements & Design 
+• ADR-style decisions 
+• When NOT to use AI 
+Scenario: 
+A retail company wants to build a new Online Shopping System with modules: 
+• Product Catalog 
+• Cart 
+• Order Management 
+• Payment 
+• User Management 
+AI is used to: 
+• Convert business requirements into technical requirements 
+• Suggest microservice boundaries 
+• Create ADR documents 
+• Identify risks 
+The AI Must: 
+• Distinguish intent vs instructions 
+• Suggest architecture (Monolith vs Microservices) 
+• Recommend database model 
+• Explain token usage and context length limits 
+• Provide structured output 
+Example Prompt (Prompting for Developers) 
+Bad Prompt (Intent only): 
+"Design an online shopping system." 
+Good Prompt (Context + Constraints + Structure): 
+"You are a senior solution architect. 
+Design a microservices-based online shopping system. 
+Constraints: 
+• Must support 10k concurrent users 
+• REST APIs only 
+• Use contract-first design 
+• Output in structured JSON with: services, responsibilities, API boundaries, risks." 
+What to Build: 
+• AI-generated architecture diagram (logical) 
+• Structured JSON output validation 
+• ADR document: 
+o Why microservices? 
+o Why not AI in payment processing logic? 
+• Requirement traceability document 
+Deliverables: 
+• AI-generated architecture JSON 
+• ADR document 
+• Requirement breakdown 
+• Explanation of temperature & token control used 

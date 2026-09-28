@@ -1,0 +1,294 @@
+Zero-Shot Prompting: 
+Prompt: 
+Create a complete prompt engineering guide focused on Zero-Shot 
+Prompting. The guide should include: 
+A clear definition of zero-shot prompting. Three levels of examples: very 
+simple, slightly advanced, and analytical.  A developer perspective section 
+explaining when zero-shot works well and its limitations. A practical scenario 
+example showing real-world application. Three practice exercises covering 
+spam classification, translation, and blog title generation. Make the guide 
+beginner-friendly, structured, and include expected outputs for each example. 
+Format it in a clear, easy-to-follow manner with proper sections and 
+explanations. 
+Exercise 
+1.Ask the model to classify sentiment (positive / negative / 
+neutral). 
+Prompt 
+Classify the sentiment of the following text as "Positive", "Negative", or 
+"Neutral": 
+"I had a great experience with the service today. Everything was 
+smooth and quick." 
+Expected Output 
+Positive 
+Another Example 
+Prompt 
+Classify the sentiment as Positive / Negative / Neutral: 
+"The product was okay. Nothing special, but not bad either." 
+Expected Output 
+Neutral 
+2. Ask the model to summarize a paragraph without providing 
+examples : 
+As a Marketing Associate at ABC Corp, I was responsible for developing 
+and executing digital marketing campaigns that increased website traffic 
+by 25% over six months. I collaborated closely with cross-functional 
+teams to create engaging content for social media channels, managed 
+email marketing initiatives, and analyzed campaign performance using 
+analytics tools to optimize strategies. Through proactive communication 
+and attention to detail, I contributed to improving brand awareness and 
+supporting overall sales growth, demonstrating both creativity and 
+strategic thinking in a dynamic work environment. 
+Prompt 
+Summarize the following paragraph in 2–3 sentences: 
+As a Marketing Associate at ABC Corp, I was responsible for developing 
+and executing digital marketing campaigns that increased website traffic 
+by 25% over six months. I collaborated closely with cross-functional 
+teams to create engaging content for social media channels, managed 
+email marketing initiatives, and analyzed campaign performance using 
+analytics tools to optimize strategies. Through proactive communication 
+and attention to detail, I contributed to improving brand awareness and 
+supporting overall sales growth, demonstrating both creativity and 
+strategic thinking in a dynamic work environment. 
+Summary (Model Output) 
+You led digital marketing campaigns that boosted website traffic by 25% 
+in six months and collaborated with teams to create effective social 
+media content. You also managed email marketing and used analytics 
+tools to improve campaign performance. Your communication skills, 
+creativity, and strategic thinking contributed to increased brand 
+awareness and supported overall sales growth. 
+3. Ask it to generate 5 blog titles about food. 
+Here are 5 creative blog titles about food (zero-shot style): 
+1. “10 Comfort Foods That Warm the Soul on Any Day” 
+2. “The Ultimate Guide to Exploring Global Street Food” 
+3. “Healthy Eating Made Simple: Delicious Meals for Busy People” 
+4. “From Farm to Fork: How Fresh Ingredients Transform Flavor” 
+5. “The Art of Home Cooking: Easy Recipes with Big Taste” 
+Few-Shot Prompting: 
+Prompt: 
+Create a complete prompt engineering guide focused on Few-Shot Prompting. The 
+guide should include.  A clear definition of few-shot prompting explaining that you 
+provide examples, so the model learns the pattern. Three levels of examples: basic 
+pattern learning (like pluralization), tone imitation (converting to polite tone), and 
+structured data extraction (extracting name and age in JSON format). A developer 
+perspective section explaining what few-shot improves (format consistency, data 
+extraction, structured outputs, pattern mimicry), how it reduces hallucinations, and 
+best use cases like resume parsing, API formatting, and intent classification. A 
+practical scenario example showing how few-shot helps in HR automation for 
+extracting candidate information from resumes. Three practice exercises: 
+converting sentences to past tense, generating JSON outputs, and creating sarcastic 
+tone content. Make the guide beginner-friendly, structured with clear examples 
+showing input-output patterns, and include expected outputs. Format it in a clear, 
+easy-to-follow manner with proper sections and explanations. 
+1.Provide 3 examples of classifying customer intent (e.g., “refund request”, “product 
+inquiry”, “technical issue”) and ask the model to classify a fourth message. 
+Classify the customer’s message into one of these intents:  - Refund Request  - Product Inquiry  - Technical Issue  
+Examples: 
+Input: "I want to return my headphones and get my money back." 
+Output: Refund Request  
+Input: "Can you tell me if this phone is available in blue color?"  
+Output: Product Inquiry  
+Input: "My laptop keeps shutting down automatically. Please help.” 
+Output: Technical Issue Now classify this message: 
+Input: "I can't log into my account even after resetting my password." 
+Output: 
+2 .Show 2 examples of converting unstructured text into a JSON schema (e.g., name, 
+email, issue type) and ask the model to generate a third JSON output. 
+Extract the following fields from the text: 
+{  
+"name": "",  
+"email": "",  
+"issue_type": "" 
+}  
+Examples: 
+Input: "Hi, this is Rohan Verma. My email is rohanv@gmail.com. I need help 
+because my payment failed." 
+Output: {"name": "Rohan Verma", "email": "rohanv@gmail.com", "issue_type": 
+"payment issue"}  
+Input: "Hello team, I’m Anusha R. You can reach me at anusha_r@mail.com. My 
+problem is that the product I received is damaged. 
+" Output: {"name": "Anusha R", "email": "anusha_r@mail.com", "issue_type": 
+"damaged product"}  
+Now generate the JSON for this:  
+Input: "My name is Vikram Singh. Email: vikram.singh21@yahoo.com. I can’t track 
+my order."  
+Output: 
+3 .Give 3 examples of log-line severity classification (“INFO”, “WARN”, “ERROR”) 
+and ask the model to classify the next log entry in the same pattern. 
+Classify each log line as one of: INFO, WARN, ERROR 
+Examples: 
+Input: "2026-02-20 10:15:22 - Connection established to database."  
+Output: INFO  
+Input: "2026-02-20 10:17:40 - Disk usage at 85%, approaching limit."  
+Output: WARN 
+Input: "2026-02-20 10:18:55 - NullPointerException occurred in PaymentService." 
+Output: ERROR 
+Now classify this log line in the same pattern:  
+Input: "2026-02-20 10:21:11 - Retry attempt failed for message queue."  
+Output: 
+Instructional Prompting: 
+Prompt: 
+Create a complete prompt engineering guide focused on Instructional Prompting. Start 
+with a clear definition explaining that instructional prompting involves giving clear step-by
+step instructions and constraints to the model. Include three levels of examples starting 
+with basic instruction like writing a 100-word paragraph about space exploration, then 
+move to examples with constraints like writing a blog introduction with specific tone, 
+audience, and word count requirements, and finally show structured output examples like 
+explaining a topic in a specific numbered format with sections like definition, types, 
+examples, and conclusion. Add a developer perspective section explaining that 
+instructional prompting is powerful for content generation, controlled formatting, SEO 
+writing, report generation, and automated documentation, and include a key tip about 
+being explicit with tone, length, format, audience, and constraints. Provide a practical 
+scenario example showing how instructional prompting helps in building a content 
+automation tool that generates blog posts with SEO keywords, headings, and maintains 
+brand tone. End with three practice exercises covering writing a product description with 3 
+bullet points, generating a LinkedIn post in 120 words, and explaining cloud computing to a 
+10-year-old. Make the guide beginner-friendly, structured with clear examples showing the 
+prompts and expected behaviors, and format it in an easy-to-follow manner with proper 
+sections and explanations. 
+1.Ask the model to write a technical blog introduction in exactly 80 words. 
+A technical blog serves as a space where developers, engineers, and tech 
+enthusiasts can explore concepts, discover new tools, and understand real-world 
+implementations. Whether discussing software architectures, cloud platforms, 
+programming languages, or emerging technologies, a well-written introduction sets 
+the stage for deeper learning. It provides clarity, context, and motivation, helping 
+readers grasp why the topic matters. This introduction aims to engage readers and 
+guide them into meaningful, practical, and thoughtfully structured technical 
+content. 
+2. Ask the model to generate API documentation for a POST endpoint with clear 
+formatting and sections. 
+Instructional Prompt Example: API Documentation Generation 
+Prompt: 
+“Generate API documentation for a POST endpoint. 
+Use the following sections and formatting: 
+1. Endpoint Overview – Describe the purpose of the endpoint. 
+2. HTTP Method & URL – Mention the method (POST) – Provide a sample URL 
+3. Request Headers – Use a table 
+4. Request Body – Include JSON schema – Add a sample request body 
+5. Response Structure – Provide success (201) and error (400/500) responses with JSON examples 
+6. Validation Rules – List all required fields and constraints 
+7. Example cURL Command – Provide a working example 
+Follow clean formatting using Markdown.” 
+Expected Model Output 
+1. Endpoint Overview 
+Creates a new user in the system by receiving basic profile information. 
+2. HTTP Method & URL 
+Method: POST 
+URL: /api/v1/users 
+3. Request Headers 
+Header 
+Value 
+Description 
+Content-Type application/json Indicates JSON request body 
+Authorization Bearer token 
+Required JWT token 
+4. Request Body 
+JSON Schema 
+JSON 
+{ 
+"name": "string", 
+"email": "string", 
+"password": "string", 
+"age": "number" 
+} 
+Show more lines 
+Sample Request Body 
+JSON 
+{ 
+"name": "Kushal", 
+"email": "kushal@example.com", 
+"password": "test1234", 
+"age": 24 
+} 
+Show more lines 
+5. Response Structure 
+201 Created (Success) 
+JSON 
+{ 
+"userId": "98ac21ff", 
+"message": "User created successfully" 
+} 
+Show more lines 
+400 Bad Request 
+JSON 
+{ 
+"error": "Email already exists" 
+} 
+Show more lines 
+500 Internal Server Error 
+JSON 
+{ 
+"error": "Unexpected server error" 
+} 
+Show more lines 
+6. Validation Rules 
+• name: required, min 2 chars 
+• email: required, valid email 
+• password: required, min 8 chars 
+• age: optional, must be ≥ 18 
+7. Example cURL Command 
+Shell 
+curl -X POST "https://api.example.com/api/v1/users" \ -H "Content-Type: application/json" \ -H "Authorization: Bearer <token>" \ -d '{ 
+"name": "Kushal", 
+"email": "kushal@example.com", 
+"password": "test1234", 
+"age": 24 
+}' 
+3. Ask the model to create a release-notes summary in a professional tone with 4 
+bullet points. 
+Include exactly 4 bullet points describing: – new features – improvements – bug fixes – performance updates 
+Keep the language concise and suitable for stakeholders.” 
+Contextual Prompting: 
+Prompt: 
+I want you to create a detailed prompt engineering guide about Contextual 
+Prompting. This guide should cover how assigning roles, defining audiences, or 
+providing background context improves AI responses. The guide must include a 
+clear definition of contextual prompting, three levels of examples showing role
+based prompting with a fitness coach creating a beginner workout plan, audience
+based prompting explaining cryptocurrency to a 60-year-old retiree, and a business 
+scenario where a startup CTO presents AI-driven analytics to investors. Include a 
+developer perspective section explaining how context improves tone alignment, 
+domain accuracy, relevance, and persuasive quality, and mention its applications in 
+AI tutors, customer service bots, role-playing simulations, and training systems. 
+Add a practical scenario showing an EdTech platform where students select explain 
+like I'm 12 and the AI adapts difficulty automatically. Include three practice 
+exercises for acting as a lawyer explaining contracts, acting as a therapist giving 
+stress advice, and acting as a marketing expert analyzing a product. Before you start 
+creating this guide, please confirm that you understand these requirements by 
+acknowledging the task and asking me any clarifying questions you might have 
+about the structure, format, tone, length, or specific details you need to create the 
+best possible guide. Do not generate the guide yet, just confirm your understanding 
+and ask questions first 
+Examples: 
+1. Act as a lawyer explaining contracts to a client. 
+2. Act as a therapist giving stress advice. 
+3. Act as a marketing expert analyzing a product. 
+Complex Prompting (Advanced / Multi-Constraint): 
+Prompt 
+You are an advanced AI system designed to handle multi-constraint 
+tasks with precision and reasoning. When given a complex prompt, you 
+must identify and satisfy every constraint simultaneously including role 
+assignment, output format, word count limits, structural requirements, 
+tone specifications, and analytical frameworks. If assigned a role such 
+as financial analyst, business consultant, or technical expert, embody 
+that perspective throughout your response. When multiple output 
+requirements are specified such as bullet points, numbered lists, 
+scores, or assessments, deliver each element exactly as requested. 
+Apply analytical reasoning when evaluating data or scenarios, providing 
+evidence-based conclusions. Prioritize clarity, conciseness, and data
+driven insights. Structure your responses to match the exact format 
+requested, whether it involves sections, subsections, or specific 
+ordering. Always maintain professional tone unless otherwise specified. 
+If word limits are given, respect them strictly. Reduce ambiguity by being 
+specific and actionable in your recommendations or analysis. 
+Examples: 
+1. Ask the model to generate a 250-word project proposal that 
+includes objectives, scope, timeline, and expected impact, 
+written in a formal business tone.  
+2. Ask the model to analyze AWS vs Azure cloud platforms and 
+produce a structured comparison including advantages, 
+disadvantages, pricing differences, and ideal use-cases, using 
+bullets and keeping the output under 350 words.  
+3. Ask the model to act as an AI cybersecurity analyst and 
+evaluate a network vulnerability report, producing output 
+sections for Severity Rating, Impact Summary, Attack Vector, 
+and Recommended Fixes, keeping the response concise and 
+technical. s

@@ -1,0 +1,43 @@
+USE CASE 4 : AI-Assisted Code Review & Quality Governance 
+Covers: 
+• AI + Code Review Mindset 
+• SonarQube 
+• Readability 
+• Complexity 
+• Hallucinated APIs 
+• Licensing risk 
+Scenario: 
+Before deployment, AI reviews the code. 
+The AI Must: 
+• Detect: 
+o Missing null checks 
+o High complexity 
+o Hardcoded secrets 
+o Fake APIs 
+• Check license risk of dependencies 
+• Suggest refactoring 
+Example Prompt: 
+"Review the following Order Service code. 
+Checklist: 
+• Code coverage issues 
+• Cyclomatic complexity 
+• Security flaws 
+• Hallucinated APIs 
+• Licensing concerns 
+Output in structured JSON: 
+{ 
+security_issues: [], 
+complexity_score: "", 
+refactor_suggestions: [], 
+risk_level: "" 
+}" 
+What to Build: 
+• Run SonarQube scan 
+• Compare AI review vs Sonar 
+• Fix detected issues 
+• Document differences 
+Deliverables: 
+• AI review report 
+• SonarQube report 
+• Refactored code 
+• Quality improvement summary 

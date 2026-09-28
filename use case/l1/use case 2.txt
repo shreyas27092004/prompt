@@ -1,0 +1,38 @@
+USE CASE 2: AI for Backend API Scaffolding (Contract-First) 
+Covers: 
+• AI for Backend 
+• Code generation patterns 
+• API scaffolding prompts 
+• Structured outputs 
+• Validation & retries 
+Scenario: 
+The Product and Cart services need REST APIs designed using OpenAPI-first approach. 
+The AI Must: 
+• Generate OpenAPI spec 
+• Generate controller scaffold 
+• Follow error model 
+• Maintain backward compatibility 
+• Retry if schema validation fails 
+Example Prompt: 
+"You are a backend engineer. 
+Generate OpenAPI 3.0 spec for Product Service. 
+Endpoints: 
+• GET /products 
+• GET /products/{id} 
+• POST /products 
+Constraints: 
+• Include proper HTTP status codes 
+• Structured error model 
+• Versioning: v1 
+• Output strictly in OpenAPI YAML format." 
+What to Build: 
+• OpenAPI YAML 
+• Backend scaffold code 
+• Validation layer 
+• Retry vs re-prompt demonstration 
+• Max token limit experiment 
+Deliverables: 
+• OpenAPI file 
+• Backend scaffold 
+• Validation logs 
+• Prompt refinement documentation 

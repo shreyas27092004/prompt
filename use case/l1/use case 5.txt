@@ -1,0 +1,57 @@
+USE CASE 5 : AI-Generated Testing & Edge Case Simulation 
+Covers: 
+• AI in Testing 
+• Test generation 
+• Edge cases 
+• Output validation 
+• Retry vs re-prompt 
+Scenario: 
+The Cart and Payment modules need robust testing. 
+The AI Must: 
+• Generate unit tests 
+• Generate boundary tests 
+• Simulate: 
+o Out-of-stock 
+o Payment timeout 
+o Invalid coupon 
+• Produce structured test cases 
+Example Prompt: 
+"Generate JUnit test cases for CartService. 
+Cover: 
+• Normal flow 
+• Empty cart 
+• Large quantity 
+• Concurrent modification 
+• Invalid product ID 
+Output: 
+• Test name 
+• Scenario 
+• Expected result 
+• Code snippet" 
+What to Build: 
+• AI-generated test suite 
+• Edge case documentation 
+• Coverage report 
+• Retry demonstration for failed schema 
+Deliverables: 
+• Test code 
+• Coverage proof 
+• Edge case document 
+• Security scenario test 
+How This Case Study Covers All Topics 
+Topic 
+Covered In 
+Prompting 
+Use Case 1–5 
+Output Control 2,4,5 
+LLM Basics 
+1 
+AI Requirements 1 
+Backend 
+2 
+Frontend 
+Code Review 
+Testing 
+3 
+4 
+5 
